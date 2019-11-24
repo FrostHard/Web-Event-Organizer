@@ -8,7 +8,8 @@ An event organizing web application built with [CodeIgniter 3](https://codeignit
 
 ## Running
 Make sure to add this in your `Homestead.yaml` file.
-``
-map: 'C:\path\to\Web-Event-Organizer'
-to: /home/vagrant/code
-``
+
+```
+map: 'C:\path\to\Web-Event-Organizer'    
+to: /home/vagrant/code  
+```
