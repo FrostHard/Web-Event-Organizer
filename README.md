@@ -13,3 +13,8 @@ Make sure to add this in your `Homestead.yaml` file.
 map: 'C:\path\to\Web-Event-Organizer'    
 to: /home/vagrant/code  
 ```
+
+
+## People in this project
+- [Farrell Nathaniel](https://github.com/FrostHard)
+- [Grand Marcell](https://github.com/GMarcell)
