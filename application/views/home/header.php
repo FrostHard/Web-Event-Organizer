@@ -17,6 +17,84 @@
     <link rel="stylesheet" href="<?= base_url(); ?>assets/css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="<?= base_url(); ?>assets/css/icomoon.css">
     <link rel="stylesheet" href="<?= base_url(); ?>assets/css/style.css">
+
+    <style>
+        {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .preload {
+            width: 100%;
+            height: 100%;
+            background: #32cfba;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .logo {
+            width: 300px;
+            height: 70px;
+            margin: 150px auto 50px auto;
+            font-size: 50px;
+            text-shadow: -2px 5px 5px #000;
+            text-align: center;
+            color: azure;
+        }
+
+        .loader-frame {
+            width: 70px;
+            height: 70px;
+            margin: auto;
+            position: relative;
+        }
+
+        .loaderOne,
+        .loaderTwo {
+            position: absolute;
+            border: 7px solid transparent;
+            border-radius: 50%;
+        }
+
+        .loaderOne {
+            width: 70px;
+            height: 70px;
+            border: 7px solid azure;
+        }
+
+        .loaderTwo {
+            width: 70px;
+            height: 70px;
+            border-left: 7px solid darkgoldenrod;
+            animation: clockwiseSpin 1s linear 3;
+        }
+
+        @keyframes clockwiseSpin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes fadeout {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+            }
+        }
+    </style>
 </head>
 
 <body>

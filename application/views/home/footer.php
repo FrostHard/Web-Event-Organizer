@@ -4,7 +4,7 @@
             <div class="col-md-8">
                 <div class="row">
                     <div class="col-lg mb-4">
-                        <h2 class="probootstrap-heading"><a href="#">Unlock</a></h2>
+                        <h2 class="probootstrap-heading"><a href="#">OrganizePro</a></h2>
                     </div>
                     <div class="col-lg">
                         <div class="probootstrap-footer-widget mb-4">
@@ -28,17 +28,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg">
-                        <div class="probootstrap-footer-widget mb-4">
-                            <h2 class="probootstrap-heading-2">Useful links</h2>
-                            <ul class="list-unstyled">
-                                <li><a href="#" class="py-2 d-block">Bootstrap 4</a></li>
-                                <li><a href="#" class="py-2 d-block">jQuery</a></li>
-                                <li><a href="#" class="py-2 d-block">HTML5</a></li>
-                                <li><a href="#" class="py-2 d-block">Sass</a></li>
-                            </ul>
-                        </div>
-                    </div>
+
                 </div>
             </div>
             <div class="col-md-4">
@@ -62,7 +52,7 @@
                 </ul>
             </div>
             <div class="col-md text-md-right text-left">
-                <p><small>&copy; Unlock 2017. All Rights Reserved. <br> Made with <span class="icon-heart"></span> by <a href="https://uicookies.com/">uiCookies</a> Demo Images: Unsplash</small></p>
+                <p><small>&copy; OrganizePro 2019. All Rights Reserved.</p>
             </div>
         </div>
     </div>
@@ -73,6 +63,26 @@
 <script src="js/<?= base_url(); ?>assets/popper.min.js"></script>
 <script src="js/<?= base_url(); ?>assets/bootstrap.min.js"></script>
 <script src="js/<?= base_url(); ?>assets/main.js"></script>
+
+<script>
+    (function() {
+        var preload = document.getElementById("preload");
+        var loading = 0;
+        var id = setInterval(frame, 64);
+
+        function frame() {
+            if (loading == 100) {
+                clearInterval(id);
+                window.open("<?= base_url('home/index')  ?>", "_self");
+            } else {
+                loading = loading + 1;
+                if (loading == 90) {
+                    preload.style.animation = "fadeout 1s ease";
+                }
+            }
+        }
+    })();
+</script>
 </body>
 
 </html>
