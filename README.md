@@ -26,7 +26,7 @@ Such as
 ```
 192.168.10.10 eventorg.test
 ```
-
+---
 You may also add phpMyAdmin (if you're using it) in the `Homestead.yaml` file.
 On the folders:
 ```
