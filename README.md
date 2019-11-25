@@ -56,7 +56,7 @@ composer install
 ```
 just in case.
 
-### To be implemented
+## To be implemented
 - Vendor Menu
 - Order functionality
 
